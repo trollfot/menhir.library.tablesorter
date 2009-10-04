@@ -24,6 +24,8 @@ setup(name='menhir.library.tablesorter',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'megrok.resourcelibrary',
+          'menhir.library.jquery',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
