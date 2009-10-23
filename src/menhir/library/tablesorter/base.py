@@ -17,3 +17,10 @@ class SimpleTableSorter(megrok.resourcelibrary.ResourceLibrary):
     megrok.resourcelibrary.depend(TableSorter)
     megrok.resourcelibrary.directory('resources')
     megrok.resourcelibrary.include('simple.sorter.js')
+
+
+class TableDnD(megrok.resourcelibrary.ResourceLibrary):
+    grok.name("menhir.library.tablesorter.tablednd")
+    megrok.resourcelibrary.depend(JQueryBase)
+    megrok.resourcelibrary.directory('resources/tableDnD')
+    megrok.resourcelibrary.include('jquery.tablednd_0_5.js')

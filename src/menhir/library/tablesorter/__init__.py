@@ -1,1 +1,1 @@
-from base import TableSorter, SimpleTableSorter
+from base import TableSorter, SimpleTableSorter, TableDnD
