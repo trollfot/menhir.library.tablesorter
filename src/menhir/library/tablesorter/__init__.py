@@ -1,1 +1,1 @@
-from base import TableSorter, SimpleTableSorter, TableDnD
+from menhir.library.tablesorter.library import tablesorter, sortable, dragndrop

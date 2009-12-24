@@ -1,20 +1,18 @@
+from os.path import join
 from setuptools import setup, find_packages
-import os
 
-version = '1.0'
+
+version = '0.1'
+history = open(join("docs", "HISTORY.txt")).read()
+readme = open(join("src", "menhir", "library", "tablesorter", "README.txt")).read()
 
 setup(name='menhir.library.tablesorter',
       version=version,
-      description="",
-      long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
-      classifiers=[
-        "Programming Language :: Python",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        ],
-      keywords='',
-      author='',
-      author_email='',
+      description="Table sorting javascript resources for Grok",
+      long_description="%s\n%s" % (readme, history),
+      keywords='Table sorting javascript',
+      author='Souheil Chelfouh',
+      author_email='trollfot@gmail.com',
       url='',
       license='GPL',
       packages=find_packages('src', exclude=['ez_setup']),
@@ -24,10 +22,13 @@ setup(name='menhir.library.tablesorter',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'megrok.resourcelibrary',
-          'menhir.library.jquery',
-          # -*- Extra requirements: -*-
-      ],
+          'hurry.jquery',
+          'megrok.resource',
+          ],
+      classifiers=[
+          "Programming Language :: Python",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          ],
       entry_points="""
       # -*- Entry points: -*-
       """,
