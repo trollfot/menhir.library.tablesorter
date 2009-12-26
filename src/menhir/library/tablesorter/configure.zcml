@@ -2,7 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:grok="http://namespaces.zope.org/grok">
 
-  <include package="megrok.resourcelibrary" file="meta.zcml" />
+  <include package="megrok.resource" />
   <include package="menhir.library.jquery" />
   <grok:grok package="." />
 
